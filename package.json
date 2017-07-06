@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Axel-Coud/SG#readme",
   "dependencies": {
     "express": "^4.15.3",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "request": "^2.81.0"
   }
 }

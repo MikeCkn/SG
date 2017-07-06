@@ -1,0 +1,47 @@
+
+.link a{
+    display: block;
+    margin-top: 2px;
+    color: rgb(110, 110, 110);
+    font-weight: 900;
+    border: 2px outset rgb(204, 0, 0);
+    text-align: center;
+}
+
+.link {
+  position: fixed;
+}
+.link a:hover{
+  color: rgb(204, 0, 0);
+  text-decoration: none;
+}
+.ancre{
+  margin-top: 50px;
+  text-align: justify;
+}
+.ancre img{
+  width: 10%;
+  margin: auto;
+}
+.ancre p {
+  display: block;
+  text-align: justify;
+  color: rgb(110, 110, 110);
+  font-weight:bolder;
+  text-transform: uppercase;
+}
+.ancre p:first-child{
+  text-align: center!important;
+}
+#ancre-un{
+  margin-top: 50px;
+}
+h2{
+  font-weight: bolder;
+  text-align: center;
+  margin: auto;
+  border-bottom: 2px solid rgb(204, 0, 0);
+  width: 30%;
+  margin-bottom: 30px;
+  color: rgb(110, 110, 110);
+}
