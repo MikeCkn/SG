@@ -7,7 +7,7 @@ app.set('view engine', 'jade');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-	res.render('index');
+	res.render('login');
 });
 
 app.get('/sg', (req, res) => {

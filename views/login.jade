@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Predictive credit
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/login.css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet')
+  body
+    .contain
+      .row
+        .col-md-6
+          img.right(src='/images/logo.jpg', alt='logo')
+        .col-md-6
+          h1
+            | PREDICTIVE
+            br
+            | CREDIT
+            p
+      .row
+        .row
+          .col-md-6
+            p.right IDENTIFIANT
+          .col-md-6
+            input.form-control.left.form(type='email', aria-describedby='emailHelp')
+        .row
+          .col-md-6
+            p.right MOT DE PASSE
+          .col-md-6
+            input.form-control.left.form(type='password', aria-describedby='emailHelp')
+        .row
+          .col-md-12.text-center
+            a(href='/shop')
+              button.btn.btn-primary.text-center SE CONNECTER
