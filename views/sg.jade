@@ -3,7 +3,7 @@ html
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    title Shop
+    title Predictive Credit
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
     // Latest compiled and minified CSS
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
@@ -14,133 +14,112 @@ html
   body
     header
       .container-fluid
-        .row
-          .col-md-2.col-md-offset-5.text-center
-        .row
-          .col-md-2
-            p société generale
-            img.img-responsive.logo(src='/images/logo.jpg', alt='')
-          .col-md-3.col-md-offset-1.link
-            a(href='#ancre-un') Epargne
-            a(href='#ancre-deux') Crédit de compte courant
-            a(href='#Crédit amortissable Expresso') Crédit amortissable Expresso
-            a(href='#Chat') Contacter votre conseiller
-          .col-md-6.ancre
-            #ancre-un
-              h2 Epargne
-              p
-                | Votre compte courant sera a découvert si vous faites cet achat, vous pouvez alimenter votre compte avec votre compte livret.
-            #ancre-deux
-              h2 Crédit de compte courant
-              p
-                | Votre compte courant sera a découvert si vous faites cet achat, vous pouvez utiliser votre découvert sur votre compte.
-            div(id='Crédit amortissable Expresso')
-              h2 Crédit amortissable Expresso
-              ul
-                li
-                  | Cette offre est valable 15 jours soit jusqu’au 07/07/2017. Elle est faite aux conditions suivantes :
-                h4 Conditions financières du contrat:
-                li Crédit amortissable
-                li Montant total du crédit
-                h4 Période d’amortissement:
-                h4 Montant de la mensualité:
-                li Sans assurance(s) facultative(s)
-                li Nombre d’échéances
-                li Périodicité
-                h4 Taux d’intérêts débiteurs annuel fixe (hors assurance)
-                h4 TAEG fixe (hors assurances facultatives):
-                h4 Montant total dû (hors assurances facultatives):
-                li Frais de dossier:
-            #Chat
-              h2 Contacter votre conseiller
-              img(src='', alt='')
-              p Votre projet nous interresse, nous avons la solution.
-              a(href='#') Contactez votre conseiller
-            // footer
-            footer
-              hr
-              .container-fluid
-                .container.footer
-                  .row
-                    .col-md-3
-                      // form langages
-                      select.form-control.form-footer
-                        option Français
-                        option English
-                        option Espanol
-                        option Italiano
-                        option Nederlands
-                        option Polski
-                        option Portugês
-                        option Suomi
-                      // form devises
-                      select.form-control.form-footer
-                        option EUR
-                        option GBP
-                        option HKD
-                        option ILS
-                        option INR
-                        option JPY
-                        option KRW
-                        option MAD
-                    // footer airbnb à propos
-                    .col-md-3.footer-text
-                      h5 Société Générale
-                      li
-                        a(href='#') Epargner
-                      li
-                        a(href='#') Bourse
-                      li
-                        a(href='#') Crédits à la consommation
-                      li
-                        a(href='#') Prêts immobiliers
-                      li
-                        a(href='#') Protéger vos biens et vos proches
-                    // footer airbnb découvrir
-                    .col-md-3.footer-text
-                      h5 Tous les simulateurs
-                      li
-                        a(href='#') Prêt amortissable Expresso
-                      li
-                        a(href='#') Prêt à taux révisable
-                      li
-                        a(href='#') Prêt à échéance progressive
-                      li
-                        a(href='#') Prêt in fine
-                      li
-                        a(href='#') Prêt relais
-                    // footer airbnb hébergement
-                    .col-md-3.footer-text
-                      h5 Guides
-                      li
-                        a(href='#') Les comptes bancaires
-                      li
-                        a(href='#') Les moyens de paiement
-                      li
-                        a(href='#') Utiliser les moyens de paiements
-                      li
-                        a(href='#') Vos dépenses
-                  // separation
-                  hr
-                  // second footer avec logo
-                  .row.footer-logo
-                    .col-md-6
-                      img(src='./../public/logo_airbnb_footer.png', alt='')
-                      |           © Société Générale, Inc.
-                    .col-md-6.footer-align
-                      ul
-                        li
-                          a(href='#') Conditions
-                        li
-                          a(href='#') Politique de confidentialité
-                        li
-                          a(href='#') Plan du site
-                        li
-                          a(href='#')
-                            i.fa.fa-facebook
-                        li
-                          a(href='#')
-                            i.fa.fa-twitter
-                        li
-                          a(href='#')
-                            i.fa.fa-instagram
+        .row.marg-head
+          .text-center
+            img.img-responsive.logo.centered(src='/images/logo.jpg', alt='')
+          //
+            <div class="col-md-3 col-md-offset-1 link">
+            <a href="#ancre-un">Epargne</a>
+            <a href="#ancre-deux">Crédit de compte courant</a>
+            <a href="#Crédit amortissable Expresso">Crédit amortissable Expresso</a>
+            <a href="#Chat">Contacter votre conseiller</a>
+            </div>
+    section
+      .row
+        .col-md-6.col-md-offset-3.ancre
+          #ancre-un
+            h2 Epargne
+            p
+              | Votre compte courant sera a découvert si vous faites cet achat, vous pouvez alimenter votre compte avec votre compte livret.
+          hr
+          #ancre-deux
+            h2 Crédit de compte courant
+            p
+              | Votre compte courant sera a découvert si vous faites cet achat, vous pouvez utiliser votre découvert sur votre compte.
+          hr
+          div(id='Crédit amortissable Expresso')
+            h2 Crédit amortissable Expresso
+            ul
+              li
+                | Cette offre est valable 15 jours soit jusqu’au 07/07/2017. Elle est faite aux conditions suivantes :
+              h4 Conditions financières du contrat:
+              li Crédit amortissable
+              li Montant total du crédit
+              h4 Période d’amortissement:
+              h4 Montant de la mensualité:
+              li Sans assurance(s) facultative(s)
+              li Nombre d’échéances
+              li Périodicité
+              h4 Taux d’intérêts débiteurs annuel fixe (hors assurance)
+              h4 TAEG fixe (hors assurances facultatives):
+              h4 Montant total dû (hors assurances facultatives):
+              li Frais de dossier:
+          hr
+          #Chat
+            h2 Contacter votre conseiller
+            img(src='', alt='')
+            p Votre projet nous interresse, nous avons la solution.
+            a(href='#') Contactez votre conseiller
+          hr
+    // footer
+    footer
+      div
+        .container-fluid.footer
+          .col-md-3
+            // form langages
+            select.form-control.form-footer
+              option Français
+              option English
+              option Espanol
+              option Italiano
+              option Nederlands
+              option Polski
+              option Portugês
+              option Suomi
+            // form devises
+            select.form-control.form-footer
+              option EUR
+              option GBP
+              option HKD
+              option ILS
+              option INR
+              option JPY
+              option KRW
+              option MAD
+          // footer sg
+          .col-md-3.footer-text
+            h5 Société Générale
+            li
+              a(href='#') Epargner
+            li
+              a(href='#') Bourse
+            li
+              a(href='#') Crédits à la consommation
+            li
+              a(href='#') Prêts immobiliers
+            li
+              a(href='#') Protéger vos biens et vos proches
+          // footer sg
+          .col-md-3.footer-text
+            h5 Tous les simulateurs
+            li
+              a(href='#') Prêt amortissable Expresso
+            li
+              a(href='#') Prêt à taux révisable
+            li
+              a(href='#') Prêt à échéance progressive
+            li
+              a(href='#') Prêt in fine
+            li
+              a(href='#') Prêt relais
+          // footer sg
+          .col-md-3.footer-text
+            h5 Guides
+            li
+              a(href='#') Les comptes bancaires
+            li
+              a(href='#') Les moyens de paiement
+            li
+              a(href='#') Utiliser les moyens de paiements
+            li
+              a(href='#') Vos dépenses

@@ -1,12 +1,164 @@
+*======== BODY OPTIONS ========*/
+* {
+	/*border: 1px solid black;*/
+}
+
 body {
 	margin: 0;
 	padding: 0;
+	font-family: Lato;
+}
+/*======== BODY OPTIONS ========*/
+
+/*======== NAV ========*/
+#header {
+	height: 50px;
+	line-height: 70px;
+	font-size: 1.2em;
+	font-weight: lighter;
 }
 
-.test {
-	margin: 30px 0 0 30px;
-	width: 500px;
-	height: 500px;
-	font-size: 30px;
-	color: #F34C;
+.element a{
+	padding: 0px 100px 0px 100px;
+	color: #000;
+	border-bottom: 1px solid rgba(0,0,0,0);
 }
+
+.element a:hover {
+	border-bottom: 1px solid #F9A419;
+	color: #F9A419;
+	transition: 0.4s;
+	text-decoration: none;
+	padding-bottom: 25px;
+}
+
+.profile i{
+	padding-left: 190px;
+	color: #F9A419;
+}
+
+#logo {
+	height: 50px;
+	padding:0px 130px 0px 0px;
+}
+
+.menu {
+	display: flex;
+
+}
+/*======== END NAV ========*/
+
+/*======== SECTION 1 ========*/
+#section1 {
+	max-height: 705px;
+	height: 800px;
+	background-image: url("images/image1.png");
+	background-size: cover;
+	background-position: center;
+
+}
+
+#logo2 {
+	height: 350px;
+	padding-left: 365px;
+	padding-top: 70px;
+
+}
+/*======== END SECTION 1 ========*/
+
+/*======== SECTION 2 ========*/
+#section2 {
+	height: 890px;
+}
+
+#iphone, #ipad, #imac {
+	height: 600px;
+}
+
+.iphonediv {
+	padding-top: 100px;
+	text-align: center;
+}
+
+.iphonediv p {
+	padding-top: 20px;
+}
+
+.button {
+	padding-top: 10px;
+	text-align: center;
+}
+
+.buybutton {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.buybutton:hover {
+	
+}
+
+.btn {
+	width: 250px;
+}
+
+.popover-content {
+	color: #000;
+	background-color: /*#22EE5B*/ /*#F7832D*/;
+	border-radius: 4px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.popover-content a {
+	font-weight: lighter;
+	color: Crimson;
+}
+
+.popover-content a:hover {
+	text-decoration: none;
+}
+
+.popover-title {
+	padding-bottom: 15px;
+}
+
+.ok {
+	color: #62c103;
+}
+
+.wrong {
+	color: Crimson;
+}
+
+#logosg {
+	height: 20px;
+	border: 1px solid black;
+}
+/*======== END SECTION 2 ========*/
+
+/*======== FOOTER ========*/
+#footer {
+	line-height: 50px;
+}
+
+#footer a {
+	color: #000;
+	opacity: 0.7;
+	padding : 0px 10px 0px 10px;
+}
+
+#footer a:hover {
+	color: #F9A419;
+	text-shadow: 1px 1px 1px #F9A419;
+	transition: 0.4s;
+}
+
+.foot {
+	text-align: center;
+}
+
+.fa {
+	padding-top: 15px;
+}
+/*======== END FOOTER ========*/

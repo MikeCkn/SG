@@ -11,7 +11,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/sg', (req, res) => {
-	res.render('sg')
+	res.render('sg');
+});
+
+app.get('/shop', (req, res) => {
+	res.render('shop');
 });
 
 let option = {

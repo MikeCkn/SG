@@ -1,0 +1,85 @@
+doctype html
+html
+  // HEAD
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Predictive Credit
+    link(rel='icon', type='image/png', href='/images/pc2.png')
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/shop.css')
+  // END HEAD
+  body
+    // SECTION NAV
+    section#header
+      .container
+        .menu
+          div
+            img#logo(src='/images/pc2.png', alt='')
+          .element
+            a(href='#iphone') iPhone
+          .element
+            a(href='#ipad') iPad
+          .element
+            a(href='#imac') iMac
+          .profile
+            a(href='#')
+              i.fa.fa-user.text-left(aria-hidden='true')
+    // END SECTION NAV
+    // SECTION 1
+    section#section1
+      .container
+        hr
+        img#logo2(src='/images/pc2.png', alt='')
+    // END SECTION 1
+    // SECTION 2
+    section#section2
+      .container
+        .iphonediv
+          img#iphone(src='/images/iphone.png', alt='')
+          p 850 €
+        .button
+          button.btn.btn-default Caractéristiques techniques
+        .buybutton
+          button.btn.btn-warning(type='button', data-toggle='popover', data-placement='right', title="<img id='logosg' src='/images/SG.png' alt=''> COMPTE COURANT <i class='ok fa fa-check' aria-hidden='true'></i>", data-content='10 000 € - 850 € = 9 150 €') ACHETER
+    // END SECTION 2
+    // SECTION 3
+    section#section2
+      .container
+        .iphonediv
+          img#ipad(src='/images/ipad3.png', alt='')
+          p 650 €
+        .button
+          button.btn.btn-default Caractéristiques techniques
+        .buybutton
+          button.btn.btn-warning(type='button', data-container='body', data-toggle='popover', data-placement='right', data-content="<a href='/sg'><img id='logosg' src='/images/SG.png' alt=''> COMPTE À ALIMENTER <i class='wrong fa fa-exclamation-triangle' aria-hidden='true'></i></a>")
+            | ACHETER
+    // END SECTION 3
+    // SECTION 4
+    section#section2
+      .container
+        .iphonediv
+          img#imac(src='/images/imac.png', alt='')
+          p 2 250 €
+        .button
+          button.btn.btn-default Caractéristiques techniques
+        .buybutton
+          button.btn.btn-warning(type='button', data-container='body', data-toggle='popover', data-placement='right', data-content="<a href='/sg'><img id='logosg' src='/images/SG.png' alt=''> COMPTE À ALIMENTER <i class='wrong fa fa-exclamation-triangle' aria-hidden='true'></i></a>")
+            | ACHETER
+    // END SECTION 4
+    // SECTION FOOTER
+    section#footer
+      .container
+        .foot.row.navbar.navbar-default
+          a(href='#')
+            i.fa.fa-facebook-square.fa-2x(aria-hidden='true')
+          a(href='#')
+            i.fa.fa-instagram.fa-2x(aria-hidden='true')
+          a(href='#')
+            i.fa.fa-twitter-square.fa-2x(aria-hidden='true')
+    // END SECTION FOOTER
+    script(src='/shop.js')
